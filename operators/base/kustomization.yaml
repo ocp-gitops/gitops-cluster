@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - amq-streams-operator-subscription.yaml
+  - camelk-operator-subscription.yaml
+  - datagrid-operator-subscription.yaml
+  - jaeger-operator-subscription.yaml
+  - kiali-operator-subscription.yaml
+  - openshift-pipelines-operator-subscription.yaml
+  - rhsso-operator-subscription.yaml
+  - serverless-operator-subscription.yaml
+  - service-mesh-operator-subscription.yaml
+  - service-registry-operator-subscription.yaml
