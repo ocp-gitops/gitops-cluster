@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - cluster-operator-application.yaml
+  - example-kafka-application.yaml
