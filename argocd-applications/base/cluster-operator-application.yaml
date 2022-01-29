@@ -8,7 +8,6 @@ spec:
   source:
     repoURL: 'https://github.com/ocp-gitops/gitops-cluster.git'
     targetRevision: main
-    path: operators/overlays/default
   destination:
     server: 'https://kubernetes.default.svc'
   syncPolicy:

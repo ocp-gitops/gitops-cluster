@@ -8,7 +8,6 @@ spec:
   source:
     repoURL: 'https://github.com/ocp-gitops/amq-streams-example.git'
     targetRevision: main
-    path: example-kafka/overlays/default
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: example-kafka

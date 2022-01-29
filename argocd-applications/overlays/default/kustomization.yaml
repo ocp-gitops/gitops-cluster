@@ -3,3 +3,23 @@ kind: Kustomization
 
 resources:
   - ../../base
+
+patchesJson6902:
+  - target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: cluster-operator-application
+    patch: |-
+      - op: add
+        path: /spec/source/path
+        value: operators/overlays/default
+  - target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: example-kafka-application
+    patch: |-
+      - op: add
+        path: /spec/source/path
+        value: example-kafka/overlays/default
