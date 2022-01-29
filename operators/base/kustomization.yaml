@@ -8,6 +8,7 @@ resources:
   - jaeger-operator-subscription.yaml
   - kiali-operator-subscription.yaml
   - openshift-pipelines-operator-subscription.yaml
+  - patch-operator-subscription.yaml
   - rhsso-operator-subscription.yaml
   - serverless-operator-subscription.yaml
   - service-mesh-operator-subscription.yaml
