@@ -23,3 +23,12 @@ patchesJson6902:
       - op: add
         path: /spec/source/path
         value: example-kafka/overlays/default
+  - target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: sso-application
+    patch: |-
+      - op: add
+        path: /spec/source/path
+        value: overlays/default
